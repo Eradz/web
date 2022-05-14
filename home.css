@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display:block;
+    object-fit:cover;
+    
+
+}
+.button{
+    background: red;
+    color:white;
+    padding: 20px;
+    height: 10vh;
+    transition: 1s ease;
+}
+.button:hover {
+    background: transparent;
+    border:1.5px solid red;
+    color: white;
+}
+p{
+   
+    margin-bottom: 30px;
+}
+a {
+    color:white;
+    transition: 0.5s ease-in;
+    font-size: small;
+    margin-right: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: whitesmoke;
+    background-color: rgb(26, 0, 44);
+    overflow-x: hidden;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: -10px auto;
+    padding: 30px;
+    padding-bottom: 2.5rem;
+    align-items: center;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+    
+   
+}
+nav{
+    position: fixed;
+    top:0;
+    background: transparent;
+    width: 100vw;
+    height: 10vh;
+    z-index: 11;
+}
+.window-scroll{
+    background:  rgb(125, 4, 211);
+    box-shadow: 0 1rem 2rem black;
+}
+nav button{
+        display: none;
+ }
+ a:hover{
+    color:blueviolet;
+    cursor: pointer;
+     
+}
+   /*---header---*/
+header{
+    position: relative;
+    top: 5rem;
+    height: 70vh;
+    /*border: 1px solid red;*/
+}
+.hrow{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    align-items: center;
+    height: 100%;
+    margin: 0px 10px 100px 30px;
+}
+.hleft p{
+    margin: 10px 0px 30px;
+}
+/*----category----*/
+.cate{
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    background: rgb(72, 3, 121);
+    margin: 0 auto;
+    height: 65vh;
+    
+}
+.cleft{
+    position: relative;
+    top: 90px;
+}
+.cright{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    align-items: center;
+    gap: 10px
+    
+}
+.cbox{
+    box-sizing: border-box;
+    background-color: rgb(54, 1, 92);
+    border-radius: 50px;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+.cbox:hover{
+    box-shadow: 3px 20px 20px rgb(29, 81, 238, 0.6);
+    cursor: pointer;
+}
+.cbox h3{
+    font-size:medium;
+}
+.cbox p{
+    font-weight: 100;
+}
+.cicon{
+    color: gold;
+}
+
+/*---our popular courses---*/
+.courses{
+    flex:1;
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+    width: 100%;
+    
+}
+.courses h2{
+    text-align:center;
+    margin-bottom: 3rem;
+}
+.corow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin-left: 120px;
+    /*border: 1px solid red;*/
+}
+.cocoln{
+    width: 100%;
+    background: rgb(49, 5, 80);
+    height: 73vh;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.cocoln h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+.cocoln p {
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.text{
+    /*border: 1px solid rgb(16, 172, 50);*/
+    padding: 0px;
+    text-align: center;
+}
+.cocoln:hover{
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(45, 5, 80);
+}
+/*----FAQs----*/
+.faq{
+    width: 80%;
+    margin: 0 auto 7rem;
+}
+.faq h2{
+    text-align: center;
+}
+.frow{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fcoln{
+    display: flex;
+    gap: 5px;
+    background: rgb(125, 4, 211);
+    margin: 10px;
+    height: 10vh;
+    
+
+}
+.fcoln.open{
+    height: 30vh;
+}
+.fcoln:hover{
+    cursor: pointer;
+}
+.fcoln h3{
+    font-size: small;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fcoln p{
+    display: none;
+}
+.fcoln.open p{
+    display:block;
+}
+.ficon{
+    padding: 20px; 
+}
+/*---testimonial---*/
+.test{
+    margin: 0 auto;
+    text-align: center;
+    width:100%;
+    margin-bottom: 5rem;
+    
+}
+.tcoln img{
+    margin: 0 auto 4rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.test h2 h4{
+    margin-bottom: 4rem;
+}
+.tcoln p{
+    font-size: small;
+    background: rgb(125, 4, 211) ;
+    padding: 3rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.tcoln p::before{
+    content: " ";
+    display: block;
+    background: linear-gradient( 136deg, transparent, rgb(125, 4, 211), rgb(125, 4, 211));
+    padding: .5rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left:50%;
+    top:-1.6rem;
+    transform: rotate(45deg);
+}
+.tcoln p:hover{
+    cursor: pointer;
+}
+.swiper-pagination{
+    position:absolute;
+}
+/*--footer--*/
+.footer{
+    margin: 0 auto;
+    width: 100%;
+    font-size: small;
+    background-color: rgb(48, 4, 80) ;
+}
+.ftrow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:2rem;
+    padding: 3rem;
+}
+.fticon{
+  background: rgb(125, 4, 211);
+}
+/*tablet view*/
+@media screen and (max-width: 1024px) {
+       /* body{background: red;}*/
+    h1{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+    .hrow{
+        margin-top: 10rem;
+    }
+    /*nav buttons*/
+    nav button{
+        display:inline-block;
+        background: transparent;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    nav button#closebtn{
+        display:none;
+
+    }
+    .menu{
+        display: none;
+        position: fixed;
+        top: 4rem;
+        right:5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap:0
+       
+    }
+    .menu li{
+        width: 100%;
+        height: 3.5rem;
+     
+        
+    }
+    .menu li a{
+        background: rgb(125, 4, 211);
+        width: 100%;
+        height:100%;
+        display: grid;
+        place-items: center;
+        
+    }
+    .menu li a:hover{
+        color:white;
+        background: rgb(74, 1, 126) ;
+    }
+    /* header section tablet*/
+    .hrow{
+    padding-bottom: 50px;
+    
+    }
+    /* category */
+    .cate{
+        display:grid;
+        grid-template-columns:1fr ;
+        gap: 80px;
+        height:fit-content;
+    }
+    .cleft{
+        text-align: center;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    .cright{
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    /*our popular courses*/
+    .courses{
+        margin-top: 5rem;
+    }
+    .corow{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .cocoln{
+      
+        height: 102%;
+        margin-bottom: 20px;
+    }
+    .text p{
+      height: fit-content;
+    }
+   /* FAQs*/
+   .fcoln{
+       height: 70%;
+       gap: 40px;
+   }
+   .fcoln.open{
+       height: fit-content ;
+   }
+   .frow{
+       display: grid;
+       grid-template-columns: 1fr;
+   }
+   .ftrow{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+   }
+}
+
+
+
+/*phone view*/
+@media screen and (max-width:600px) {
+    /*body{background: blue;}*/
+
+        nav{
+           height: 8vh;
+        }
+       .cate{
+           width:90%
+       }
+        .cbox{
+            text-align: center;
+        }
+        /*FAQs phone*/
+        .frow{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------ABOUT------*/
+.achieve{
+    margin-top: 130px;
+}
+.arow{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.aboxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.abox{ 
+    background:rgb(60, 2, 102);
+    border-radius: 20px ;
+    padding: 20px;
+    text-align: center;
+    line-height: 4rem;
+    width: 10vw;
+    height: 32vh;
+    transition: 0.5s;
+}
+.aicon1{
+   border: 1px solid red;
+   border-radius: 10px;
+   background: rgb(223, 26, 26);
+   font-size: 2rem;
+   padding: 15px;
+    margin-bottom: 10px;
+}
+.aicon2{
+   border-radius: 10px;
+   background:  rgb(54, 180, 61);;
+   font-size: 2rem;
+   padding: 15px;
+   margin-bottom: 10px;
+}
+.aicon3{
+   border-radius: 10px;
+   background: rgb(158, 98, 226);
+   font-size: 2rem;
+   padding: 15px;
+   margin-bottom: 10px;
+}
+.acont{
+    margin: 0 auto;
+}
+.h{
+    margin-bottom: 20px;
+}
+.abox:hover{
+    cursor: pointer;
+    background: rgb(125, 4, 211);
+    border: 1px solid rgb(125, 4, 211);
+}
+/* team */
+.team{
+    background: rgb(46, 1, 78,0.4) ;
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tboxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.tbox{
+    position: relative;
+    background: rgb(81, 2, 138) ;
+    padding: 30px;
+    padding-right:50px ;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.tbox:hover img {
+    cursor: pointer;
+    background: transparent;
+    border:1px solid rgb(81, 2, 138) ;
+    filter: saturate(1);
+    
+}
+.tbox:hover  {
+    cursor: pointer;
+    background: transparent;
+    border:1px solid rgb(81, 2, 138) ;
+    filter: saturate(1);
+    
+}
+.tbox:hover span {
+    cursor: pointer;
+    border:1px solid rgb(81, 2, 138) ;
+    filter: saturate(1);
+    
+}
+.tbox img{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    filter: saturate(0);
+}
+.tbox h3{
+    margin-bottom: 10px;
+}
+.ticon{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    margin-left: 10px;
+    background: rgb(81, 2, 138);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tmicon{
+    color: blue
+}
+.tmicon1:hover{
+    border: 1px solid rgb(81, 2, 138);
+    background-color: transparent;
+   
+}
+.tmicon1{
+    color: blue;
+    border: 1px solid rgb(81, 2, 138);
+}
+
+
